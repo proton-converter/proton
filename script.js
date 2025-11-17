@@ -4,7 +4,7 @@ document.getElementById('warpButton').onclick = function() {
 }
 
 document.getElementById('promoButton').onclick = function() {
-    window.location.href = 'https://help-guide.notion.site/Amnezia-Premium-1f72684dab0d8013a057ed6562c8bdca';
+    window.location.href = 'https://storage.googleapis.com/amnezia/amnezia.org?m-path=premium&arf=VG755WBZDBAPGGYM';
 }
 
 document.querySelectorAll('input[name="option"]').forEach(radio => {
