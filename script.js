@@ -158,6 +158,10 @@ const COUNTRY_FLAGS = {
       'CA': '🇨🇦 CA',
       'AU': '🇦🇺 AU',
       'RO': '🇷🇴 RO',
+	  'MX': '🇲🇽 MX',      
+	  'NO': '🇳🇴 NO',      
+	  'SG': '🇸🇬 SG',      
+      'CH': '🇨🇭 CH',
       'PL': '🇵🇱 PL'
     };
 let proxyList = [];
