@@ -1,9 +1,13 @@
+
+html { overflow-x: hidden;}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin: 0;
+	overflow-x: hidden;
     }
 
     body {
@@ -24,32 +28,36 @@ body {
     width: 100%;
     max-width: 550px;
   position: relative;
-    margin: 0 auto 10px; 
+    margin: 0 auto; 
   left: -14px;
 }
     .container {
 	  margin: auto;
 	  max-width: 220px;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
       background: #ffffff;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: all 0.3s ease;
     }
-    .container2 {
+    .container2, .container3 {
 		
 	  margin: auto;
 	  margin-top: 0px;
 	  margin-right: -25px; 
-	  margin-bottom: 20px;
+	  margin-bottom: 15px;
       background: #ffffff;
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	  position: relative;
-	  
     }
+	
+	.container3{
+	max-width: 193px;
+	margin: auto;}
+	
 	
 .container-columns.karing-active {
   left: -60px;
@@ -75,11 +83,24 @@ body {
     }
 textarea:focus { outline: 1px solid #6D4AFF; }
 .jc {
+	border-radius: 2px;
+	border: 1px solid #888891;
 	max-height: 20px;
 	resize:none;
-	margin-bottom: -4px;
+	margin-bottom: -3px;
+	max-width: 140px;
+	white-space: nowrap; 
+    overflow-y: hidden; 
+
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
 }
 
+.jc::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+}
 button {
   align-items: center;
   justify-content: center;
@@ -454,6 +475,14 @@ max-width:	30px
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
 }
 
+select {background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid #888891;
+  width: 146px;
+  min-height: 23.25px;}
+  
+select:focus-visible
+{outline: 1px solid #6D4AFF;}  
 
 @media (max-width: 730px) {
 	
@@ -468,18 +497,19 @@ button, textarea, .custom-file-upload {
 	left: 0px;
 }	
 .infobtn {
-    max-width: 100%;
-	min-width: 100%;
+	max-width: 82%;
+    min-width: 73%;
 }
 
 .container2.karing-active {
 	margin-left: 45px;
 	max-width:95%;
+	
 }
 
 .container2 {
-	min-width: 260px;
-	margin: 0 auto 0 0;
+	width: 72%;
+    margin: 15px auto;
 }
 
 #fp1, #fps1, #fpd1 {
@@ -487,7 +517,7 @@ button, textarea, .custom-file-upload {
 	height: 60px;
 }
 
-#logo {max-width: 90%}	
+#logo {max-width: 77%}	
 body {padding: 0px;}
 #jmax1, #jmin1 {max-width: 33px}
 #jc1 {max-width: 26px}
