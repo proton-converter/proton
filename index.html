@@ -16,20 +16,21 @@
 			<label for="wgFiles" class="custom-file-upload" id="fileUploadLabel">Выбрать файлы</label>
 			<input type="file" id="wgFiles" accept=".conf" multiple class="hidden-input">
 			<button onclick="convert()">Конвертировать</button>
+			
+				
 				<label><div class="checkbox">
-					<input type="radio" id="clash" name="option" class="radio" checked/>
-					<span class="radio-fakeradio"></span><img src="Clash.webp" alt="AmneziaWG Icon" class="amnezia-icon">Clash
-				</div></label>
-				<br>
-				<label><div class="checkbox">
-					<input type="radio" id="awg" name="option" class="radio" />
+					<input type="radio" id="awg" name="option" class="radio" checked/>
 					<span class="radio-fakeradio"></span><img src="AWG.webp" alt="AmneziaWG Icon" class="amnezia-icon">AmneziaWG
 				</div></label>
 				<br>
 				<label><div class="checkbox">
 					<input type="radio" id="karing" name="option" class="radio" />
-					<span class="radio-fakeradio"></span><img src="Karing.webp" alt="AmneziaWG Icon" class="amnezia-icon">Karing 
-				<img src="Hiddify.webp" alt="AmneziaWG Icon" class="amnezia-icon">Hiddify
+					<span class="radio-fakeradio"></span><img src="WireSock.webp" alt="AmneziaWG Icon" class="amnezia-icon">WireSock 
+				
+				</div></label><br>
+					<label><div class="checkbox">
+					<input type="radio" id="clash" name="option" class="radio"/>
+					<span class="radio-fakeradio"></span><img src="Clash.webp" alt="AmneziaWG Icon" class="amnezia-icon">Clash
 				</div></label>
 		</div>
 		<div class="container2">
@@ -53,7 +54,8 @@
 			jmax = <textarea id="jmax1" class="jc" rows="1" maxlength="4" placeholder="1280"></textarea>
 			<button onclick="" class="randombtn">Случайно</button>
 		</div>
-		<div class="musor2 hidden">
+			<!--
+			<div class="musor2 hidden">
 			<label><div class="checkbox">
 				<input type="radio" id="fake1" name="fake" class="radio" checked/>
 				<span class="radio-fakeradio"></span> f_p = 3, f_p_s = 1, f_p_d = 3
@@ -73,14 +75,41 @@
 			f_p_d = <textarea id="fpd1" class="jc" rows="1" maxlength="7" placeholder="20-250"></textarea>
 			<button onclick="" id="rndbtn" class="randombtn2">Случайно</button>
 			</div>
+			-->
 		</div>
 	</div>
+					<div class="container3 hidden" id="15awg">
+					<div class="musor1"  style="line-height: 27px;">
+					    I1 = <textarea id="i1" class="jc" rows="1" wrap="off" placeholder="<b 0xc600000...>"></textarea> 
+					<br>I2 = <textarea id="i2" class="jc" rows="1" wrap="off" placeholder="<b 0x...>"></textarea> 
+					<br>I3 = <textarea id="i3" class="jc" rows="1" wrap="off" placeholder="<b 0x...>"></textarea>
+					<br>I4 = <textarea id="i4" class="jc" rows="1" wrap="off" placeholder="<b 0x...>"></textarea>
+					<br>I5 = <textarea id="i5" class="jc" rows="1" wrap="off" placeholder="<b 0x...>"></textarea>
+					<button onclick="" class="randombtn">Случайно</button>
+					</div>
+					</div>
+				
+					<div class="container3 hidden" id="15wiresock">
+					<div class="musor1"  style="line-height: 27px;">
+					Id = <textarea id="id" class="jc" rows="1" wrap="off" placeholder="ozon.ru"></textarea><br>
+					Ip = <select name="select" id="ip">
+						<option value="quic"selected>QUIC</option>
+						<option value="dns">DNS</option>
+					</select><br>
+					Ib = <select name="select" id="ib">
+						<option value="chrome">Chrome</option>
+						<option value="firefox" selected>Firefox</option>
+						<option value="curl">cURL</option>
+					</select>
+					<button onclick="" class="randombtn">Случайно</button>
+					</div>
+				</div>
 		<div class="infobtn">
 			<div class="file-list" id="fileList"></div>
 			<div class="result" id="output">
 							<div class="switch">
 				<label class="toggle">
-					<input class="toggle-checkbox" type="checkbox" id="awg15" disabled>
+					<input class="toggle-checkbox" type="checkbox" id="awg15" checked disabled>
 					<div class="toggle-switch"></div>
 					<span class="toggle-label">AWG 1.5</span>
 				</label>
